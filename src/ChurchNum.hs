@@ -16,7 +16,7 @@ import           Base
 import           Combinators
 
 -- zero :: p2 -> t3 -> t3
-zero = Base.flip constant
+zero = Base.flip Base.constant
 
 -- one :: (t1 -> t2) -> t1 -> t2
 one = apply
@@ -24,7 +24,7 @@ one = apply
 -- two :: (t -> t) -> t -> t
 -- @help: can't figure out point free version (cause s-combinator is not)
 -- two x y = x $ x y
-two = s Base.compose identity
+two = s Base.compose Base.identity
 
 -- inc :: Num a => a -> a
 inc = (+1)
