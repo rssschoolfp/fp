@@ -1,6 +1,10 @@
 module Main where
 
-import Lib
+import           Base
+import           ChurchBool
+import           ChurchNum
+import           Lib
+import           Tuple
 
 main :: IO ()
 main = someFunc
